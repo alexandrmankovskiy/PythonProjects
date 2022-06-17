@@ -7,45 +7,59 @@ print("Hello, name yourself: ")
 
 Name = input()
 
-print(Name + ", enter range u want to guess from:")
+i = 0
 
-FirstNum = int(input("First num : "))
-SecondNum = int(input("Second num: "))
+for i in range(1):
+    print(Name + ", enter range u want to guess from:")
 
-RandomNumOfTryes = random.randint(5,10)
+    FirstNum = int(input("First num : "))
+    SecondNum = int(input("Second num: "))
 
-print(Name + ", you have " + str(RandomNumOfTryes) + " tryes")
+    RandomNumOfTryes = random.randint(5, 10)
 
-print("So, " + Name + " lets start, try to guess:")
+    print(Name + ", you have " + str(RandomNumOfTryes) + " tryes")
 
-Integer = random.randint(FirstNum, SecondNum)
+    print("So, " + Name + " lets start, try to guess:")
 
-print("Game started")
+    Integer = random.randint(FirstNum, SecondNum)
 
-for NumOfTryes in range(RandomNumOfTryes):
-	answer = input()
-	answer = int(answer)
+    print("Game started")
 
-	if answer < Integer:
-		print("Your num is to small")
+    for NumOfTryes in range(RandomNumOfTryes):
+        answer = input()
+        answer = int(answer)
 
+        if answer < Integer:
+            print("Your num is to small")
 
-	if answer > Integer:
-		print("Your num is too big")
+        if answer > Integer:
+            print("Your num is too big")
 
-	if answer == Integer:
-		print("Your num is correct!")
-		break
+        if answer == Integer:
+            print("Your num is correct!")
+            break
 
-	NumOfTryes += NumOfTryes
+        NumOfTryes += NumOfTryes
 
-	if NumOfTryes == RandomNumOfTryes:
-		break
-		print("Sorry " + Name + "u are out of tryes")
-		print("The secret number was: " + Integer)
+        if NumOfTryes == RandomNumOfTryes:
+            break
+            print("Sorry " + Name + "u are out of tryes")
+            print("The secret number was: " + Integer)
 
-if answer == Integer:
-	NumOfTryes = str(NumOfTryes + 1)
-	print("Congrast, " + Name + " u did it!. It took u " + NumOfTryes + " tryes!")
+    if answer == Integer:
+        NumOfTryes = str(NumOfTryes + 1)
+        print("Congrast, " + Name + " u did it!. It took u " + NumOfTryes + " tryes!")
+        print("Do you want to continue or exit? Type y/n")
 
-input("Press ENETR to leave...")
+        yorn = input()
+
+        if yorn == "y":
+            print("Ok, " + Name + " lets try again")
+            continue
+        if yorn == "n":
+            print("See you later," + Name)
+            break
+        else:
+            print("sorry, did not get u. Type again")
+
+input("Press ENter to leave...")
