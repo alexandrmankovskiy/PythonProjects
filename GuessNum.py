@@ -7,9 +7,7 @@ print("Hello, name yourself: ")
 
 Name = input()
 
-i = 0
-
-for i in range(1):
+def code():
     print(Name + ", enter range u want to guess from:")
 
     FirstNum = int(input("First num : "))
@@ -51,15 +49,11 @@ for i in range(1):
         print("Congrast, " + Name + " u did it!. It took u " + NumOfTryes + " tryes!")
         print("Do you want to continue or exit? Type y/n")
 
-        yorn = input()
 
-        if yorn == "y":
-            print("Ok, " + Name + " lets try again")
-            continue
-        if yorn == "n":
-            print("See you later," + Name)
-            break
-        else:
-            print("sorry, did not get u. Type again")
+yorn = 'yes'
+
+while yorn == 'yes' or yorn == 'y':
+    code()
+    yorn = input()
 
 input("Press ENter to leave...")
