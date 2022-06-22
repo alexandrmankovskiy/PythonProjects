@@ -34,13 +34,27 @@ HANGMAN_PICS = ['''
   O   |
  /|\  |
  / \  |
+     ===''', '''
+  +---+
+ [O   |
+ /|\  |
+ / \  |
+     ===''', '''
+  +---+
+ [O]  |
+ /|\  |
+ / \  |
      ===''']
-words = 'аист акула бабуин баран барсук бобр бык верблюд волк воробей ворон выдра голубь гусь жаба зебра змея индюк кит кобра коза козел койот корова кошка кролик крыса курица лама ласка лебедь лев лиса лосось лось лягушка медведь моллюск моль мул муравей мышь норка носорог обезьяна овца окунь олень орёл осёл панда паук питон попугай пума семга скунс собака сова тигр тритон тюлень утка форель хорёк черепаха ястреб ящерица'.split()
+words = {'Цвета':'красный оранжевый желтый зеленый синий голубой фиолетовый белый черный коричневый'.split(),
+'Фигуры':'квадрат треугольник прямоугольник круг эллипс ромб трапеция параллелограмм пятиугольник шестиугольник восьмиугольник'.split(),
+'Фрукты':'яблоко апельсин лимон лайм груша мандарин виноград грейпфрут персик банан абрикос манго банан нектарин'.split(),
+'Животные':'аист бабуин баран барсук бык волк зебра кит коза корова кошка кролик крыса лев лиса лось медведь мул мышь норка носорог обезьяна овца олень осёл панда пума скунс собака сова тигр тюлень хорёк ящерица'.split()}
 
-def getRandomWord(wordList):
-    # Эта функция возвращает случайную строку из переданного списка.
-    wordIndex = random.randint(0, len(wordList) - 1)
-    return wordList[wordIndex]
+def getRandomWord(wordDict):
+    # Эта функция возвращает случайную строку из переданного словаря.
+    wordKey = random.choice(list(wordDict.keys()))
+    wordIndex = random.randint(0, len(wordDict[wordKey]) - 1)
+    return [wordDict[wordKey][wordIndex], wordKey]
 
 def displayBoard(missedLetters, correctLetters, secretWord):
     print(HANGMAN_PICS[len(missedLetters)])
@@ -83,12 +97,27 @@ def playAgain():
 
 
 print('В И С Е Л И Ц А')
+
+difficulty = ' '
+while difficulty int in 'ЛСТ':
+    print('Выберите уровень сложности: Л - Легкий, С - Средний, Т - Тяжелый')
+    difficulty = input().upper()
+if difficulty == 'C':
+    del HANGMAN_PICS[8]
+    del HANGMAN_PICS[7]
+if difficulty == 'T':
+    del HANGMAN_PICS[8]
+    del HANGMAN_PICS[7]
+    del HANGMAN_PICS[5]
+    del HANGMAN_PICS[3]
+
 missedLetters = ''
 correctLetters = ''
 secretWord = getRandomWord(words)
 gameIsDone = False
 
 while True:
+    print('Секретное слово из набора: ' + secretSet)
     displayBoard(missedLetters, correctLetters, secretWord)
 
     # Позволяет игроку ввести букву.
