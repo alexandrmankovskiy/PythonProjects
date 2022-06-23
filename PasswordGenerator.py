@@ -5,7 +5,7 @@ def getOptions(max):
 	incSym = input('Do you want to include symbols in your password? type y/n')
 	incNum = input('Do you want to include numbers in your password? type y/n')
 	incLet = input('Do you want to include letters in your password? type y/n')
-	password = ' ' * passLen
+	password = ' '
 	if incNum == 'y' and incSym == 'y' and incLet == 'y':
 		for i in range(passLen):
 			random1 = random.randint(0, max)
@@ -13,11 +13,11 @@ def getOptions(max):
 			randLet = letters[random.randint(0,len(letters)-1)]
 			randomNum = numbers[random.randint(0,len(numbers)-1)]
 			if random1 == 0:
-				password = password[:i] + randSym
+				password = randSym + password
 			elif random1 == 1:
-				password = password[:i] + randLet
+				password = randLet + password
 			else:
-				password1 = password[:i] + randLet
+				password = randLet + password
 
 	print(password)
 
