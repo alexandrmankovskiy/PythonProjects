@@ -9,17 +9,17 @@ def getOptions(max):
 	if incNum == 'y' and incSym == 'y' and incLet == 'y':
 		for i in range(passLen):
 			random1 = random.randint(0, max)
-			randSym = symlse[random.randint(0,len(symlse))]
-			randLet = letters[random.randint(0,len(letters))]
-			randomNum = numbers[random.randint(0,len(numbers))]
-			if random == 0:
-				password = password[:i] + randSym + password[i+1:]
-			elif random == 1:
-				password = password[:i] + randLet + password[i+1:]
+			randSym = symlse[random.randint(0,len(symlse)-1)]
+			randLet = letters[random.randint(0,len(letters)-1)]
+			randomNum = numbers[random.randint(0,len(numbers)-1)]
+			if random1 == 0:
+				password = password[:i] + randSym
+			elif random1 == 1:
+				password = password[:i] + randLet
 			else:
-				password = password[:i] + randLet + password[i+1:]
+				password1 = password[:i] + randLet
 
-	return password
+	print(password)
 
 
 
