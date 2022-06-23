@@ -1,0 +1,56 @@
+<mxfile host="app.diagrams.net" modified="2022-06-22T17:19:16.659Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="MtZ9Ii5wJ1_9iIFpwrkj" version="20.0.1" type="github">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1008" dy="579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="IEn1ETnP1TMT1njSFV-u-0" value="Start" style="rounded=1;whiteSpace=wrap;html=1;fontSize=25;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=5;perimeterSpacing=4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="364" y="30" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="IEn1ETnP1TMT1njSFV-u-2" value="" style="endArrow=classic;html=1;rounded=0;fontSize=25;strokeWidth=3;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="414" y="80" as="sourcePoint" />
+            <mxPoint x="414" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IEn1ETnP1TMT1njSFV-u-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=25;strokeWidth=3;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="IEn1ETnP1TMT1njSFV-u-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IEn1ETnP1TMT1njSFV-u-3" value="Asking parametrs to be included in generated password" style="rounded=1;whiteSpace=wrap;html=1;fontSize=25;strokeWidth=5;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="306" y="160" width="216" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="IEn1ETnP1TMT1njSFV-u-4" value="" style="endArrow=classic;html=1;rounded=0;fontSize=25;strokeWidth=3;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="414" y="320" as="sourcePoint" />
+            <mxPoint x="414" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IEn1ETnP1TMT1njSFV-u-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=25;strokeWidth=3;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="IEn1ETnP1TMT1njSFV-u-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IEn1ETnP1TMT1njSFV-u-5" value="Generating password" style="rounded=1;whiteSpace=wrap;html=1;fontSize=25;strokeWidth=5;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="354" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IEn1ETnP1TMT1njSFV-u-6" value="" style="endArrow=classic;html=1;rounded=0;fontSize=25;strokeWidth=3;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="IEn1ETnP1TMT1njSFV-u-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="330" y="320" as="sourcePoint" />
+            <mxPoint x="230" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IEn1ETnP1TMT1njSFV-u-7" value="Saved profile" style="rounded=1;whiteSpace=wrap;html=1;fontSize=25;strokeWidth=5;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="90" y="370" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="IEn1ETnP1TMT1njSFV-u-8" value="" style="endArrow=classic;html=1;rounded=0;fontSize=25;strokeWidth=3;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="IEn1ETnP1TMT1njSFV-u-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="290" y="420" as="sourcePoint" />
+            <mxPoint x="340" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
