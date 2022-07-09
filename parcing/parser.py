@@ -24,9 +24,8 @@ def getContent(html):
             'link':item.find('a', class_='address').get('href'),
             'usdt_price':item.find('span', class_='green').get_text(strip=True),
             'mileage':item.find('li', class_='item-char js-race').get_text(strip=True),
-            'engine':item.find('i', class_='icon-fuel').find_next_siblings(text=True),
+            #'engine':item.find('i', class_='icon-fuel').find_next_siblings(text=True),
             'uah_price':uah_price.replace('\xa0грн','')
-
         })
     print(cars)    
 def parse():
